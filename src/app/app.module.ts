@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { LoginComponent } from './Auth/login/login.component';
 import { SignupComponent } from './Auth/signup/signup.component';
+import { ContactBookComponent } from './main/contact-book/contact-book.component';
+import { CallDialComponent } from './main/call-dial/call-dial.component';
+import { MessangerComponent } from './main/messanger/messanger.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    ContactBookComponent,
+    CallDialComponent,
+    MessangerComponent
   ],
   imports: [
     BrowserModule,
