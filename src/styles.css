@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
+  @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Kanit:wght@700&family=Montserrat:ital,wght@0,100;0,600;1,200;1,400&family=Rubik:wght@500&display=swap');
+
+  body{
+    background-color: #101635 !important;
+
+  }
