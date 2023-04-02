@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import * as Twilio from 'twilio-client';
 
 @Component({
   selector: 'app-src-main',
@@ -6,10 +7,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./src-main.component.css']
 })
 export class SrcMainComponent implements OnInit {
+ 
 
-  constructor() { }
+  constructor(
+    // private device: Twilio.Device
+  ) {
+    // const accountSid = 'your_account_sid';
+    // const authToken = 'your_auth_token';
+
+    // this.device = new Twilio.Device(token);
+    // Twilio.Device.
+   }
 
   ngOnInit(): void {
   }
+
+  // makeCall() {
+  //   const params = {
+  //     To: '+2349017820944',
+  //   };
+  //   this.device.connect(params);
+  // }
 
 }
