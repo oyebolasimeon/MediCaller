@@ -37,3 +37,15 @@ span{
     width: 92%;
     margin: auto;
 }
+
+.appointment{
+    background-color: #8B8D99;
+    min-height: 30vh;
+    border-radius: 20px 20px;
+    margin-top: 7vh !important;
+}
+
+.date-para{
+    font-size: 50px;
+    color: #f1f2f1;
+}

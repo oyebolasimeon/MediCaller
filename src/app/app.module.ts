@@ -9,6 +9,7 @@ import { SignupComponent } from './Auth/signup/signup.component';
 import { ContactBookComponent } from './main/contact-book/contact-book.component';
 import { CallDialComponent } from './main/call-dial/call-dial.component';
 import { MessangerComponent } from './main/messanger/messanger.component';
+import { SrcMainComponent } from './src-main/src-main.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MessangerComponent } from './main/messanger/messanger.component';
     SignupComponent,
     ContactBookComponent,
     CallDialComponent,
-    MessangerComponent
+    MessangerComponent,
+    SrcMainComponent
   ],
   imports: [
     BrowserModule,
