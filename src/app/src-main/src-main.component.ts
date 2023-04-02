@@ -1,3 +1,4 @@
+import { ServiceService } from './../service.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 // import * as Twilio from 'twilio-client';
@@ -11,7 +12,8 @@ export class SrcMainComponent implements OnInit {
   myForm!: FormGroup;
 
   constructor(
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private msgService: ServiceService
   ) {
     this.createForm();
    }
@@ -29,7 +31,10 @@ export class SrcMainComponent implements OnInit {
 
 
   sendMessage(){
-
+    const payload = this.myForm.getRawValue();
+    this.msgService.message(payload).subscribe((res:any) =>{
+      alert("Message Sent")
+    })
   }
 
 }
