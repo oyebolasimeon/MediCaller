@@ -32,7 +32,8 @@ export class SrcMainComponent implements OnInit {
 
   sendMessage(){
     const payload = this.myForm.getRawValue();
-    this.msgService.message(payload).subscribe((res:any) =>{
+    payload.message = "Happy new month";
+    this.msgService.message(payload.number, payload.message).subscribe((res:any) =>{
       alert("Message Sent")
     })
   }

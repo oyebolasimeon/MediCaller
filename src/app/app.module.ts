@@ -12,6 +12,7 @@ import { MessangerComponent } from './main/messanger/messanger.component';
 import { SrcMainComponent } from './src-main/src-main.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { CommonModule } from '@angular/common';
     AppRoutingModule,
     ReactiveFormsModule,
     CommonModule,
+    HttpClientModule
     
   ],
   providers: [],

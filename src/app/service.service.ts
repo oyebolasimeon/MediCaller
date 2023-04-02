@@ -8,8 +8,8 @@ export class ServiceService {
 
   constructor(private http: HttpClient) { }
 
-  message(data: any) {
+  message(id: any, msg:any) {
     const url = 'https://medicmessageapi.onrender.com/'; // replace with your API endpoint
-    return this.http.post(url, data);
+    return this.http.get(`${url}${id}/${msg}`);
   }
 }
