@@ -29,4 +29,9 @@ export class SrcMainComponent implements OnInit {
   //   this.device.connect(params);
   // }
 
+
+  sendMessage(){
+    
+  }
+
 }
