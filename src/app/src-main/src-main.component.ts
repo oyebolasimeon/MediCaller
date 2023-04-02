@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 // import * as Twilio from 'twilio-client';
 
 @Component({
@@ -7,31 +8,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./src-main.component.css']
 })
 export class SrcMainComponent implements OnInit {
- 
+  myForm!: FormGroup;
 
   constructor(
-    // private device: Twilio.Device
+    private formBuilder: FormBuilder
   ) {
-    // const accountSid = 'your_account_sid';
-    // const authToken = 'your_auth_token';
-
-    // this.device = new Twilio.Device(token);
-    // Twilio.Device.
+    this.createForm();
    }
 
   ngOnInit(): void {
   }
 
-  // makeCall() {
-  //   const params = {
-  //     To: '+2349017820944',
-  //   };
-  //   this.device.connect(params);
-  // }
+  
+
+  createForm() {
+    this.myForm = this.formBuilder.group({
+      number: ['', [Validators.required, Validators.pattern(/^-?(0|[1-9]\d*)?$/)]],
+    });
+  }
 
 
   sendMessage(){
-    
+
   }
 
 }

@@ -10,6 +10,8 @@ import { ContactBookComponent } from './main/contact-book/contact-book.component
 import { CallDialComponent } from './main/call-dial/call-dial.component';
 import { MessangerComponent } from './main/messanger/messanger.component';
 import { SrcMainComponent } from './src-main/src-main.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,10 @@ import { SrcMainComponent } from './src-main/src-main.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    CommonModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
